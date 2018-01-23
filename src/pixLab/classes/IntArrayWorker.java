@@ -46,12 +46,13 @@ public class IntArrayWorker
     return total;
   }
   
-  public int getColTotal()
+  public int getColTotal(int column)
   {
 	  int col = 0;
 	  
+	  
+	  
 	  return col;
-	   
   }
   /**
    * Method to fill with an increasing count
