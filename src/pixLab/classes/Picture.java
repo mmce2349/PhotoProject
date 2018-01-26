@@ -174,6 +174,16 @@ public class Picture extends SimplePicture
     }   
   }
 
+  public void girFilter(int startRow, int startCol)
+  {
+	  Pixel fromPixel= null;
+	  Pixel toPixel = null;
+	  Picture gir = new Picture("gir.png");
+	  
+  }
+  
+  
+  
   /** Method to create a collage of several pictures */
   public void createCollage()
   {
