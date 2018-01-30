@@ -18,6 +18,13 @@ public class PictureTester
     beach.explore();
   }
   
+  public static void testGir()
+  {
+	  Picture beach = new Picture("CumberlandIsland.jpg");
+	  beach.explore();
+	  beach.girFilter(beach.getHeight()/2, beach.getWidth()/2);
+	  beach.explore();
+  }
   /** Method to test mirrorVertical */
   public static void testMirrorVertical()
   {
