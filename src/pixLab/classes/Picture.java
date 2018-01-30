@@ -206,7 +206,7 @@ public class Picture extends SimplePicture
 		  {
 			  fromPixel = fromPixels[fromRow][fromCol];
 			  toPixel = toPixels[toRow][toCol];
-			  if (fromPixel.isTransparent())
+			  if (!fromPixel.isTransparent())
 			  {
 				  toPixel.setRed(fromPixel.getRed());
 				  toPixel.setBlue(fromPixel.getBlue());
