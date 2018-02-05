@@ -119,6 +119,26 @@ public class Picture extends SimplePicture
     } 
   }
   
+  public void glitchFilter()
+  {
+	  int storage = 0;
+	  Pixel [] [] pixels;
+	  Pixel leftPixel = null;
+	  Pixel rightPixel = null;
+	  int width = pixels[0].length;
+	  for(int row = 0; row < pixels.length; row ++)
+	  {
+		  for(int col = 0; col< width/3; col++)
+		  {
+			  //I tried.
+		  }
+	  }
+	  
+	  
+	  
+	  
+  }
+  
   public void mirrorHorizontal()
   {
 	 Pixel[][] pixels = this.getPixels2D();
