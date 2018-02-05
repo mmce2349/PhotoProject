@@ -119,18 +119,24 @@ public class Picture extends SimplePicture
     } 
   }
   
-  public void glitchFilter()
+  public void glitchArt()
   {
-	  int storage = 0;
-	  Pixel [] [] pixels;
+	  
+	  Pixel [] [] pixels = this.getPixels2D();
+	  int shiftAmount = (int)(.33 * pixels[0].length);
 	  Pixel leftPixel = null;
 	  Pixel rightPixel = null;
 	  int width = pixels[0].length;
+	  
 	  for(int row = 0; row < pixels.length; row ++)
 	  {
-		  for(int col = 0; col< width/3; col++)
+		  for(int col = 0; col< pixels[0].length; col++)
 		  {
-			  //I tried.
+			  leftPixel = pixels [row][col];
+			  rightPixel = pixels [row][width - shiftAmount];
+			 Color tempColor = leftPixel.getColor();
+			 
+			  
 		  }
 	  }
 	  
