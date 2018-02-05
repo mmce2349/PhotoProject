@@ -133,8 +133,10 @@ public class Picture extends SimplePicture
 		  for(int col = 0; col< pixels[0].length; col++)
 		  {
 			  leftPixel = pixels [row][col];
-			  rightPixel = pixels [row][width - shiftAmount];
+			  rightPixel = pixels [row][(width - shiftAmount + col) % width];
 			 Color tempColor = leftPixel.getColor();
+			 leftPixel.setColor(rightPixel.getColor());
+			 rightPixel.setColor(tempColor);
 			 
 			  
 		  }
