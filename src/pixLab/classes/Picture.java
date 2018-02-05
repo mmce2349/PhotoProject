@@ -134,7 +134,7 @@ public class Picture extends SimplePicture
 		  {
 			  leftPixel = pixels [row][col];
 			  rightPixel = pixels [row][(width - shiftAmount + col) % width];
-			  midPixel = pixels [row][col + shiftAmount];
+			  midPixel = pixels [row][(col + shiftAmount)  % width];
 			  
 			 Color leftColor = leftPixel.getColor();
 			 Color rightColor= rightPixel.getColor();
