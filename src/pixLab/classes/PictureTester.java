@@ -26,6 +26,14 @@ public class PictureTester
 	  beach.explore();
 	  
   }
+  public static void testClassFilter()
+  {
+	  Picture beach = new Picture("beach.jpg");
+	  beach.explore();
+	  beach.classFilter(null);
+	  beach.explore();
+	  
+  }
   public static void testGir()
   {
 	  Picture beach = new Picture("CumberlandIsland.jpg");
@@ -82,15 +90,16 @@ public class PictureTester
     // and comment out the ones you don't want
     // to run
 	  testGlitch();
-    testZeroBlue();
+	  testClassFilter();
+  //  testZeroBlue();
     //testKeepOnlyBlue();
     //testKeepOnlyRed();
     //testKeepOnlyGreen();
     //testNegate();
     //testGrayscale();
     //testFixUnderwater();
-    testMirrorVertical();
-    testMirrorHorizontal();
+    //testMirrorVertical();
+    //testMirrorHorizontal();
     //testMirrorTemple();
     //testMirrorArms();
     //testMirrorGull();

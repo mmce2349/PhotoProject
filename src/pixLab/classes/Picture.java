@@ -147,19 +147,31 @@ public class Picture extends SimplePicture
   
   public void classFilter(Color color)
   {
-	  Pixel [] [] pixels = this.getPixels2D();
-	  Pixel leftPixel = null;
+	  int mirrorPoint = 276;
+	    Pixel leftPixel = null;
 	    Pixel rightPixel = null;
-	    int width = pixels[0].length;
-	    for (int row = 0; row < (pixels.length-(pixels.length/.8)); row++)
+	    int count = 0;
+	    Pixel[][] pixels = this.getPixels2D();
+	    
+	    // loop through the rows
+	    for (int row = 0; row < 100; row++)
 	    {
-	      for (int col = 0; col < (pixels[row].length -(pixels[row].length/.2)); col++)
+	      // loop from 13 to just before the mirror point
+	      for (int col = 0; col < mirrorPoint; col++)
 	      {
-	        leftPixel = pixels[row][col];
-	        rightPixel = pixels[row][width - 1 - col];
+	        
+	        leftPixel = pixels[row][col];      
+	        rightPixel = pixels[row]                       
+	                         [mirrorPoint - col + mirrorPoint];
 	        rightPixel.setColor(leftPixel.getColor());
 	      }
-	    } 
+	    }
+	   
+  }
+  
+  public void addMessage(String message, int xPos, int yPos, Color color)
+  {
+	  
 	  
   }
   
