@@ -30,7 +30,7 @@ public class PictureTester
   {
 	  Picture beach = new Picture("beach.jpg");
 	  beach.explore();
-	  beach.classFilter(null);
+	  beach.classFilter();
 	  beach.explore();
 	  
   }

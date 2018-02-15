@@ -145,7 +145,7 @@ public class Picture extends SimplePicture
 	  
   }
   
-  public void classFilter(Color color)
+  public void classFilter()
   {
 	  int mirrorPoint = 276;
 	    Pixel leftPixel = null;
