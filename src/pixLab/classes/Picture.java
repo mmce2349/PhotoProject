@@ -139,10 +139,47 @@ public class Picture extends SimplePicture
 			  pixels[row][col].setColor(currentColors[(col+shiftAmount) % width]);
 		  }
 	  }
-	  
-	  
-	  
-	  
+	  int mirrorPoint = 276;
+	    Pixel leftPixel = null;
+	    Pixel rightPixel = null;
+	    int count = 0;
+	    Pixel[][] colors = this.getPixels2D();
+	   
+	    for (int row = 27; row < 97; row++)
+	    {
+	   
+	      for (int col = 13; col < mirrorPoint; col++)
+	      {
+	        
+	        leftPixel = colors[row][col];      
+	        rightPixel = colors[row]                       
+	                         [mirrorPoint - col + mirrorPoint];
+	        rightPixel.setGreen(0);
+	      }
+	    }
+	    for (int row = 300; row < 353; row++)
+	    {
+	      for (int col = 72; col < mirrorPoint; col++)
+	      {
+	        
+	        leftPixel = colors[row][col];      
+	        rightPixel = colors[row]                       
+	                         [mirrorPoint - col + mirrorPoint];
+	        rightPixel.setGreen(0);
+	      }
+	    }
+	    for (int row = 27; row < 97; row++)
+	    {
+	      for (int col = 13; col < 25; col++)
+	      {
+	        
+	        leftPixel = colors[row][col];      
+	        rightPixel = colors[row]                       
+	                         [mirrorPoint - col + mirrorPoint];
+	        rightPixel.setRed(0);
+	      }
+	    }
+  
   }
   
   public void classFilter()
