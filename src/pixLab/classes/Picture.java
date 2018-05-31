@@ -202,6 +202,9 @@ public class Picture extends SimplePicture
 	        rightPixel.setColor(leftPixel.getColor());
 	      }
 	    }
+	 
+	
+	  
 	   
   }
   
@@ -367,7 +370,7 @@ public class Picture extends SimplePicture
   {
     Picture beach = new Picture("beach.jpg");
     beach.explore();
-    beach.zeroBlue();
+    beach.glitchArt();
     beach.explore();
   }
   
